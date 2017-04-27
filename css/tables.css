@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* CSS Document */
+
+table.month
+{
+	width: 236px;
+	height: 130px;
+	border: solid 1px black;
+	border-collapse: collapse; 
+	margin: 0 auto;
+	background: #FFF;
+	font-size: 12px;
+	font-family: 'Droid Sans', sans-serif;
+	background-color: rgba(255,255,255, .4);
+	
+}
+table.month tr
+{
+	height: 2px;
+	width: 2px;	
+}
+table.month td
+{
+	border: solid 1px black;
+	text-align: center;
+	vertical-align: middle;
+	width: 33px;
+}
+
+table.month td.holiday
+{
+	border: solid 1px black;
+	text-align: center;
+	vertical-align: middle;
+	width: 33px;
+	color: #F00;
+	font-weight: bold;
+}
+
+tbody
+{
+	
+}
+
+h4
+{
+	margin: 0 auto;
+	border: solid 1px black;
+	width: 636px;	
+}
+.day
+{
+	
+}
+
+h3.large
+{
+	margin-top: 50px;	
+	width: 734px;
+	height: 30px;
+	font-size: 30px;
+	font-family: 'Varela Round', sans-serif;
+}
+
+
+
+
+
+/* IMAGES USED:
+
+http://www.flickr.com/photos/27695964@N03/4155620502/in/photolist-7kdDcm-7m2ntR-7n27nE-7nyRoz-7oDpNF-7pjV5p-7ppfzL-7pHLv7-7qWaV4-7r6fZp-7rEnkx-7sGmVi-7tiZnM-7uHKL
+B-7uXAM4-7uYbKL-7uYQ7U-7vEV2A-7vFzPC-7w194M-dGDFap-dANGQr-bCbxYT-bkVBoj-dAN3sx-dzS16h-btd1Qk-95TL3g-bnTvTc-94N6nA-dCKi97-95XsSE-dCDTjc-9fDx1w-8YbYX7-9dAnbT-dyfrao-
+bvDtDA-bguXFM-bpgGpd-aLvQYa-dFjmeu-dCDT16-dKV6mU-dRYLd6-9QtW7F-dCKhQ1-aZsDJP-92DE7U-bDhWTz-8Y45qH
+
+
+http://www.flickr.com/photos/51178005@N03/5940170219/in/photolist-a3UVDV-7KkzwD-9nsXj6-9nvYc7-9nsVFe-96GteK-eewW8v-eeCEmm-eeCEno-97fxt5-bv1H46-9o4q3B-8d24V7-96GteP-eeCEmE-eewW8e-eewW8x-eewW92-a9n82J-9bTb99-7KkwX4-96GARe-96GARk-8f4Vq7-9rMqGq-eeCEnh-8TPzVB-dXjDwZ-aL4fMr-aL4fSV-
+bjKZne-aL4fDv-aiPCwP-bvCotx-boow7B-ab7QdS-boow88-aiPCvi-96GARi-9rG4xu-9vf4SX-b8U7UF-9BDy3Y-bd5YDg-9BDy3C-eb4EX6-edZGUa-edZGTF
+
+
+http://www.flickr.com/photos/29783237@N05/4562516418/in/photolist-7Xb6bb-a5vmNn-faZsMC-9S1RDG-eT8EQ7-cz6TpE-cz6Qx1-cz6J5G-cz6TdG-cz6Jrh-cz6JH5-cz6NS7-cz6Jdo-cz6JAW-fuQA2n-eDsS3B-8cqvBK-c7jduC-a2MjzX-adxyDH-8vtY5g-8dL4B4-9W8p38-a1hAKj-eKYgcS-eMYNWp-875AA8-8qxfap-8ZNUw1-fzawUt-88qrfb-
+8nAVV9-cz6U47-9PuBqa-86NQzF-8mipzk-8w2CAm-9qfHbr-a3uMpv-acRCPT-acUt3q-acRDjt-9Vrr1T-8q7jxA-d3LD63-cwKXw5-axaKBk-daWxCJ-fioFG3-eVjyMy-bEGSoT
+
+http://www.flickr.com/photos/85277889@N08/8031471466/in/photolist-deHoDY-8yK4xo-9e7HgP-88pUgF-bnTDMq-cxTaWQ-cxT8zu-bVWDFH-9i7PJ3-9i7PuY-dv5eSx-aiYxVK-eKzUBE-eKzUgY-bfzPak-cacu8o-cr5pLj-8tNLVo-dP8pAf-bnTxmY-8FmK56-8FpUWS-8FpUES-8FmHEV-8FpV4J-
+8FpV8q-8kmkaG-8DuTo8-8kmkij-aqQW1B-c5Zu5J-8knhRj-8kmkoG-8kmkcd-8FmK7X-8FmJ1z-8FpTHw-8FmHyk-8FmJzg-8FpUtA-8FpUaf-8FmJoH-8FmKbg-8FmJvt-8FpV1J-8FmHB6-8FpTWN-8FmHSz-8FmHNc-8FpUpq-8FpVaY
+
+http://www.flickr.com/photos/49503168860@N01/4909169032/in/photolist-8tNLVo-dP8pAf-bnTxmY-8FmK56-8FmK7X-8FpUWS-8FmJ1z-8FpTHw-8FmHyk-8FmJzg-8FpUtA-8FpUaf-8FmJoH-8FmKbg-8FpUES-8FmJvt-8FpV1J-8FmHB6-8FmHEV-8FpTWN-8FpV4J-8FpV8q-8FmHSz
+-8FmHNc-8FpUpq-8FpVaY-asTpvQ-d2wxMY-8kmkaG-8DuWCB-8DuTo8-8Dy3vu-8Dy3Ew-8zMdvf-8kmkij-cdrk4L-aqQW1B-96y8jQ-c5Zu5J-8knhRj-8kmkoG-83hM4S-8kmkcd-8Bdm47
+
+http://www.flickr.com/photos/53133240@N00/1541577051/in/photolist-3mdZ9F-46uZse-48HgGS-48HgPu-4mow5L-4GhmQt-5bDcKc-5dDo1z-5dDofn-5fw62p-5gTnKF-5k5fCv-5kt5CB-5kt5Qg-5mjfoe-5mzgBA-5q8o3Y-5qvnBA-5qRnC7-5qTc34-5xUG9c-5x
+UH2a-5xUNYB-5xZ8DJ-5xZaEN-5BXznK-5BYPfx-5C2TtW-5C48Kd-5C48UW-5C495y-5Gbid9-5HfWa2-5HRjzV-5RMxTF-5RRSKA-5UmPcy-5YQFnB-61R56o-64fRuL-64gV8g-65xJSx-66z4j9-675pZ4-679DdJ-
+67vcsa-6hZARZ-6iFY7k-6s99Co-6sA3th-6E8xk6
+
+http://www.flickr.com/photos/7241574@N03/4555842486/in/photolist-7WzTfo-bzXM6u-bRMLNn-bCSPPN-bRMxvp-bCT3Hh-bmGx26-
+bRMEsR-bRMDun-bRMySe-bRMJ9i-bRMwtg-bRMGyH-bCSY2A-bRMFEF-bCT1xN-bCSURo-bRMx1a-bCSTDd-bCT3aJ-bCSUrN-bCSYZA-bRML1H-bCT41y-9GcN5N-9K4Kx3
+-fPmwXS-7ZHJtw-7ZEyeD-7ZExZp-cQFJQy-bScggX-bScg3K-bDhyFq-7Vudje-7VucDv-7VubXi-9EXkC5-9hyzTb
+
+http://www.flickr.com/photos/24742305@N00/2256230386/in/photolist-4rnLFU-4zZ5jQ-4Cd1Z6-4DimjN-4EeSRM-
+4EeT7M-4EvfFd-4Grsdb-4GsdBF-4GsegD-4GseUz-4J2UcF-4Jq8Er-4JrpTP-4JQsS8-4Kd34d-4KfMAu-4KkCC5-4Lst5n-4LKpSh-4M8WjL-4N13TA-4P9tcW-4P
+GAHU-5cxRrJ-5fvtYn-5hAqhg-5j9adR-5m279m-5nKVmH-5w2AU1-5Raayk-5RaaBX-5RaaGB-5RaaL2-5Radve-5RadBz-5RadMR-5RadZe-5Rae4X-5Raein-5RaeEz-
+5RaeQF-5Raf1x-5RafbT-5Rafhe-5Rafvg-5Rafzk-5RafDi-5RafJx-5RafSt
+
+http://www.flickr.com/photos/21976354@N07/2349801988/in/photolist-4zDmgo-4AxCXN-4DMyF3-4EbDRE-4
+U3WJ6-4UN7Ag-53G3cR-55iKk2-56Fgwg-5ggqda-5jsK2m-5saEMh-5srHXK-5vnwZg-5wyzpM-5ytW7F-5yLtxb-5Azo5p-5E8F
+JU-5NdCze-5WujLc-64j88S-64uLVH-655UvU-65kyXE-66zCYi-6CT8mN-6StTrM-71JV8o-7fADmS-7jXxDZ-7u4cr1-7vYbAX-bhqByt-aub95Q
+-bysnVJ-bhr4cx-cd6XyC-cd6WU1-bRZ5Lc-cjhHBd-a6pGvV-baAuzk-9QomVn-ddzCzQ-ekv4Ta-baAzH4-acP8N9-9isz3v-ab7SDV-abaHTh
+
+http://www.flickr.com/photos/28145073@N08/5952223760/in/photolist-a4YGKA-a4VQJX-a4VQTt-a4VQwP-8i97h5-7DqYnT-ao4FVa-
+eB3ydw-eAZH4K-eB3Sk7-eAZu5t-eAx4AE-f8SW2x-co3v1j-ahyLHd-7W7sHh-aic2Vn-c2DGfj-c2DHbL-fjBYLo-f1AGwD-cEQbcN-fekEss-eAZES
+2-eB3rXW-eB3QBy-eAZYWz-eAZS5c-eB45KQ-eAZVTH-eB3vw1-eB3qa5-eB3HXm-eB3G9A-eB3Wij-eB3TP7-eAZnrF-eB42SL-eB3Db1-8btuGg
+
+http://www.flickr.com/photos/17381269@N00/169371301/in/photolist-fY5bR-gkg8W-gRsTa-gRs
+Tb-hui6y-jRcGG-mP5Dk-nkbdh-nzFvE-qfKcv-quqKD-y49C3-zpuWB-zpuWE-DgK8X-EZqYS-FBgBo-GnBCf-GyQP1-GPzmR-HZ
+Q1v-HZQ1z-Jd6pz-JDJJ2-LKaC6-NwcRG-PyPFf-Q423P-XdRxu-22MGez-2672Ef-2dg2NM-2dZtvi-2dZtx6-2gRrrb-2gWYrb-2n2v
+pL-2HEc6Z-2Rm62A-3S6h3H-3X8zcb-45qeyc-4efrKT-4gZdCq-4u5LZQ-4yKk1h-4zS8MD-4Au9F9-4BjUFx-4Bz37t-4CAZtx
+
+
+http://www.flickr.com/photos/98799884@N00/7023931213/in/photolist-bGFu3i-bs4
+A45-bsYMYm-e63Eju-bqYDkh-7MoGse-bza3NN-9xDgXk-9tfuxV-9u7a8w-9zUta4-eeGsv2-edYDuw-c1M5Go-bQ
+JypV-7VgucX-fKm6uF-bSXfci-7RppY4-e6KuWg-7SEG9B-7SHYWS-7SEGmc-9xJVre-bwtUL5-bJihX4-871TGC-9WAQnN-9H7xDd
+-7W48C5-9x9FSs-bJRyyr-7MioAs-9wCXdo-9wzYYx-9KRqNV-9pMNvo-7QokM3-9zgiCv-dPgZ42-9FBGG4-dVL3eV-9Gk8Rk-9rNrEU-
+85EA4r-9HaiEA-boYpbG
+
+http://www.flickr.com/photos/78341140@N00/5996421299/in/photolist-a8Te98-7ZzS3k-aAKHeS-9
+xkEBe-b2V6kP-8MyBGQ-8MvwFH-8MyBkj-9Bz2xY-7AAgUy-7QH98A-eFGdzW-bTxhZi-aRDtJp-a8UAji-9HgZQU-eiQQcy-eEZJ
+ct-9SHuz2-9JzsNu-aA1KpA-7WkTLo-7WhCkT-7WhBHt-eEYmW4-eEYEEx-eEYYTB-7V8FUy-c1Rugq-eEYW86-eFpaWz-eFrbjn-eFph8P
+-eFxmBE-7WmDpP-eEYWWB-eFzd7M-85YipY-c1Rqew-bXCcu5-eEYNUn-eEYRz4-eeGTnK-eF5Svq-eEYHEr-eEDher-eF6SLj-eF6LhQ-7ZfxMo-eb4K73-eF6Nq5
+
+
+http://www.flickr.com/photos/78543783@N05/7053173455/in/photolist-bKgmJT
+-7BLi5M-c5Xnbq-7MeeS7-7MagZX-dTqShw-9SWjt3-d5S8oN-7MjQWW-fhxPqm-bmJE8d-aZvyVK-82YN
+Sf-aZvyZp-ah6AS1-dvtbQt-foWDQV-foWE1g-fpbW3Q-fpbVLA-fpbVXy-fpbW2u-fpbWdh-fpbWbw-foWDM
+p-fpbVUE-fpbVRS-foWDQr-foWDGP-fpbVVb-foWE6Z-foWDKM-foWDFP-foWDSe-fpbVLG-fpbVTy-foWE2z-
+foWDYD-foWDNi-fpbVQj-fpbVLu-foWDWn-a3AR9b-e5jSQ1-e5jS8U-e5eepD-e5jSpJ-e5jT15-e5jSWw-e5e
+duD-e5jSMo
+
+
+
+http://www.flickr.com/photos/66367651@N00/3577649810/in/photolist-6s9oD
+q-6seBiT-6siNkg-6snXxW-6D7Kqb-6MCWAk-6MH6xU-6MH7wo-6TM2eE-6TVyUA-6UjqS4-6UosSd-
+6V2Ejb-6V9CF1-6WNSa5-6ZAFGp-72ay6h-78fxmx-78fz6c-78jqcy-7bQ4HS-7hLxbh-7wS2Vn-7wS2V
+P-7wS2Wv-7wS2WT-7wVQnJ-7wVQoo-7LfMHf-cQz47S-7UY7Lg-g7MJs4-g7N345-c8e7qW-eR2YP4-c4rnYU
+-7ETLgs-fwev9o-7JdjQh-eRenLq-ew7Bzp-bDC2n7-9UFiRR-7AfDXd-7AfDUf-7AbSKg-7AfDTf-7AbSTv-c
+
+http://www.flickr.com/photos/47051377@N00/5070051504/in/photolist-8J2kF7-atKkSx-atN277-at
+KmSV-aHkoui-ayrRe8-atMZYo-c8ZyJb-dDwWQ5-dDwWNw-fUQEhH-8D5hHu-b1LFbv-9fmn9T-8SNsmh-axAwbb-axAw
+pd-djfJdy-8MEksG-axAvLL-atjJwk-8KAYMH-dke
+8Yb-8UC9jx-8Pgo9M-axxNXv-doJU91-8QCc63-c5oZ5w-c5oYh3-c5oXnb-c5oWyh-8NHzgk-aFtsdR-a
+DkXJX-dp8Hgu-atKx1a-b731vT-9ZC2SB
+kExTU-c3ejfQ-dw6rKP
+
+http://www.flickr.com/photos/jantik/6184310/size
+s/m/in/photolist-xGo3-JCvJ-VmGc-WYUY-29mV7-2cQS9-2rHTU-2B
+1yz-2BWoY-2UfKR-2WE91-4arHQ-4EUNp-4YJuq-7fPWn-7J6hS-8ezj2-8KLm6-
+9iqkA-9pAcB-bGBDC-cDM9B-d2AxG-dfSGT-dsgyp-du65P-e7cp8-eJtJh-faVD3-fxh
+cY-fSmPB-gBaHa-gGSzz-hGqga-hNjjX-hRsaH-jFihB-k1a2A-k5dun-myzz5-ogFW4-oh2
+VV-okfzh-pwxkh-pKpLY-pQyLr-s1ZyA-s9gJU-tkm1c-tZBnC-uUJXf/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
